@@ -1,0 +1,126 @@
+body{
+    overflow-x:hidden;
+
+}
+header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    padding:40px 100px;
+    z-index:100;
+    transition:all 1s;
+}
+header.sticky{
+    padding:10px 100px;
+    background:#262626;
+}
+nav ul {
+    display:flex;
+    justify-content:space-between;
+}
+nav ul li {
+    list-style:none;
+}
+nav ul li > a{
+    text-decoration:none;
+    color:#eee;
+}
+
+
+/*section one*/
+.sesion1{
+    background:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../imgs/tree_and_mountain_landscape_3107.jpg);
+    background-size:cover;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.sesion1__content{
+    color:#eee;
+    text-align:center;
+}
+
+/*sesion2*/
+
+.sesion2{
+    background:#eee;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow-x:hidden;
+}
+.sesion2__content{
+    width:50%;
+    position:absolute;
+    right:20px;
+    margin-right:30px;
+}
+.animado{
+    right:-900px;
+    opacity:0px;
+    transition:all 2s;
+}
+#sesion2__img{
+   width:100%;
+   height:100%;
+   object-fit:cover;
+}
+.img{
+    position:absolute;
+    width:590px;
+    height:300px;
+    left:30px;
+    margin-left:50px;
+}
+.animarimg{
+    left:-700px;
+    opacity: 0;
+    transition: all 2s;
+
+}
+
+
+/*section three*/
+.sesion3{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.cajas{
+    display:flex;
+    justify-content:center;
+}
+
+.caja1{
+    border:1px solid #262626;
+    width:400px;
+    margin-right:30px;
+    padding:10px  10px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    position:relative;
+}
+.animarcaja{
+    left:-900px;
+    opacity:0;
+    transition:all 3s;
+}
+.bx-navigation, .bx-phone, .bx-mobile-alt{
+    font-size:100px;
+    margin:auto;
+}
+
+
+::-webkit-scrollbar{
+    width:8px;
+    background:#262626;
+}
+::-webkit-scrollbar-thumb{
+    background:#fff;
+    border-radius:30px;
+}
